@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>PROGRAMMING KIDDA</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="refresh" content="5; url=https://shubhams1401-sawant.github.io/">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="programming kidda"/>
+        <meta property="og:description" content="programming kidda"/>
+        <meta property="og:image" content="logo.png"/>
+        <link rel="shortcut icon" href="https://programmingkidda.github.io//logo.png" style="border-radius: 50px;">
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+        <div class="container" >
+            <section>
+                <div class="heading">
+                    <h1>programming kidda</h1>
+                </div>
+                <div class="countdown">
+                    <div id="countdown"></div>
+                </div>
+                <div class="loading">
+                    <div id="loading"></div>
+                </div>
+            </section>
+        </div>
+        <script>
+            var countdown = document.getElementById('countdown');
+            var count = 5;
+            function countdown_f(){
+                if(count>=0){
+                    countdown.innerHTML=count;
+                    count--;
+                    setTimeout(countdown_f, 1000);
+                }
+            }
+            countdown_f();
+        </script>
+    </body>
+</html>
